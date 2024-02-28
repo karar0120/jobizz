@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:jobizz/core/routing/routes.dart';
+import 'package:jobizz/feature/onboarding/onboarding_screen.dart';
 
 class AppRoute {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Routes.loginScreen:
-      // return MaterialPageRoute(
-      //     builder: (context) => BlocProvider<LoginCubit>(
-      //           create: (context) => getIt<LoginCubit>(),
-      //           child: const LoginScreen(),
-      //         ));
+      case Routes.onBoardingScreen:
+        return MaterialPageRoute(
+            builder: (context) => const OnBoardingScreen());
 
       default:
         return unDefinedRoute();
